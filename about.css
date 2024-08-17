@@ -1,0 +1,143 @@
+
+.ALL{
+    background-color: #081b29;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.logo {
+
+    font-family: fantasy ;
+    font-size: 40px;
+    color: rgb(56, 130, 209);
+}
+
+.navbar-links ul {
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
+.navbar-links :hover{
+        transition: 0.5s;
+        background: rgb(56, 130, 209);
+        color: white;
+        box-shadow: 1px 1px 30px rgb(56, 130, 209);
+}
+
+.navbar-links li {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 0 20px;
+    font-size: 25px;
+}
+
+.navbar-links a {
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    border-radius: 22px;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 150px;
+    color: white;
+    text-shadow: 1px 1px 30px rgb(56, 130, 209) ;
+    text-align: center;
+    margin-top: 200px;
+}
+.back{
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 300px;
+    padding: 3px 15px;
+    font-size: 25px;
+    color: rgb(194, 194, 194);;
+    background-color: transparent;
+    border-radius: 22px;
+    cursor: pointer;
+    text-align: center;
+}
+.back a {   
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 3px 15px;
+    border-radius: 22px;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+.back > a:hover{
+    transition: 0.5s;
+    background-color: rgb(56, 130, 209);
+    color: white;
+    box-shadow: 1px 1px 30px rgb(56, 130, 209);
+    padding: 3px 25px;
+} 
+@media (max-width: 1200px){
+    .back{
+        margin: auto;
+    }
+    .title{
+        font-size: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .ALL{
+        height: 1500px;
+    }
+    .back{
+        position: absolute;
+        margin: auto;
+    }
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        font-size: 19px;
+        display: none;
+        width:  30%;
+        height: 1%;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}   

@@ -1,0 +1,261 @@
+
+.ALL{
+    background-color: #081b29;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.logo {
+
+    font-family: fantasy ;
+    font-size: 40px;
+    color: rgb(56, 130, 209);
+}
+.navbar-links ul {
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
+.navbar-links a:hover{
+    transition: 0.5s;
+    background: rgb(56, 130, 209);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 30px rgb(56, 130, 209);
+}
+
+.navbar-links li {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 0 20px;
+    font-size: 25px;
+}
+
+.navbar-links a {
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    border-radius: 22px;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.navbar-links ::before{
+    position: absolute;
+    content: '';
+    top: -50%;
+    right: -5%;
+    width: 1000px;
+    height: 1200px;
+    background: #081b29;
+    animation: showRight 0.5s ease forwards;
+    animation-delay: 0.001s;
+}
+.box{
+    position: absolute;
+    max-width: 600px;
+    margin-left: 600px;
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 22px;
+    box-shadow: 1px 1px 30px rgb(56, 130, 209);
+}
+.box::before{
+    position: absolute;
+    content: '';
+    top: -20%;
+    right: -20%;;
+    width: 1000px;
+    height: 700px;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.5s;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(56, 130, 209);
+}
+input[type="text"], input[type="email"], textarea {
+    width: 96%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid rgb(56, 130, 209);
+    border-radius: 22px;
+}
+input[type="submit"] {
+    text-align: center;
+    margin-left: 75%;
+    width: 25%;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid rgb(56, 130, 209);
+    border-radius: 22px;
+    color: rgb(56, 130, 209);
+    font-size: 16px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    transition: 0.5s;
+    background-color: rgb(56, 130, 209);
+    color: white;
+    box-shadow: 1px 1px 30px rgb(56, 130, 209)
+}
+.name{
+    font-size: 16px;
+    color: rgb(56, 130, 209);
+
+}
+.email{
+    font-size: 16px;
+    color: rgb(56, 130, 209);
+
+}
+.message{
+    font-size: 16px;
+    color: rgb(56, 130, 209);
+}
+.icon{
+    display:flex;
+    justify-content: space-between;
+    width: 125px;
+
+}
+.icon a{
+    justify-content: space-between;
+    position: relative;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid rgb(56, 130, 209);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(56, 130, 209);
+    text-decoration: none;
+
+    
+
+}
+
+.icon >a:hover{
+    transition: 0.5s;
+    background: rgb(56, 130, 209);
+    color: white;
+    box-shadow: 1px 1px 30px rgb(56, 130, 209);
+}
+.back{
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 300px;
+    padding: 3px 15px;
+    font-size: 25px;
+    color: rgb(194, 194, 194);;
+    background-color: transparent;
+    border-radius: 22px;
+    cursor: pointer;
+    text-align: center;
+}
+.back a {   
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 3px 15px;
+    border-radius: 22px;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+.back > a:hover{
+    transition: 0.5s;
+    background-color: rgb(56, 130, 209);
+    color: white;
+    box-shadow: 1px 1px 30px rgb(56, 130, 209);
+    padding: 3px 25px;
+}    
+
+@keyframes showRight{
+    100% {
+        width: 0;
+    }
+
+}
+@media (max-width: 1200px){
+    .back{
+        margin: auto;
+    }
+    .box{
+        margin-left: 200px;
+        
+    }
+}
+@media (max-width: 768px) {
+    input[type="submit"] { 
+        text-align: center;    
+        margin-left: 67%;
+        width: 35%;
+        padding: 10px;
+
+    }
+    
+    .box{
+        margin-left: auto;
+        margin-top: 40%;
+    }
+    .ALL{
+        height: 1500px;
+    }
+    .back{
+        position: absolute;
+        margin: auto;
+    }
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        font-size: 19px;
+        display: none;
+        width:  30%;
+        height: 1%;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
